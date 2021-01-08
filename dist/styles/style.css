@@ -355,6 +355,10 @@ body {
   color: var(--bottom-hover-color);
 }
 
+.container .card .main-card .bottom .status-category .status:focus {
+  outline: none;
+}
+
 @media screen and (max-width: 800px) {
   .container .top {
     width: 480px;

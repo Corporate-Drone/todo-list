@@ -46,6 +46,9 @@ inputToDo.addEventListener('keyup', (e) => {
         //update to do count
         updateCount();
 
+        //display the to dos based on what status button was clicked
+        displayStatus();
+
         inputToDo.value = "";
     }
 })
@@ -167,7 +170,6 @@ function displayClear() {
 
         clearCompleted(completedToDos[i], index);
     }
-    console.log(completedToDos);
 }
 
 function clearCompleted(completed, index) {
@@ -184,16 +186,19 @@ function deleteRow(todoDiv, newToDo) {
     updateCount();
 }
 
-// function colorButton {
-//     if (htmlClass.classList.contains('dark')) {
-//         console.log('DARK!');
-//     } else {
-//         console.log("nope")
-//     }
-// }
+function displayStatus() {
+    if (/all/.test(window.location.href)) {
+        displayAll();
+    } else if (/active/.test(window.location.href)) {
+        displayActive();
+    } else if (/complete/.test(window.location.href)) {
+        displayCompleted();
+    }
+}
 
 function init() {
     updateCount();
+    window.location.href = '#status-all'
 }
 
 init();

@@ -41,10 +41,6 @@ body {
         }
     }
 
-    a {
-
-    }
-
     .clickable {
         cursor: pointer;
     }
@@ -170,6 +166,9 @@ body {
                         }
                         &:target {
                             color: var(--bottom-hover-color);
+                        }
+                        &:focus {
+                            outline: none;
                         }
                     }
                 }
