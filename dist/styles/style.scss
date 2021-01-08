@@ -41,6 +41,10 @@ body {
         }
     }
 
+    a {
+
+    }
+
     .clickable {
         cursor: pointer;
     }
@@ -159,7 +163,12 @@ body {
 
                     .status {
                         margin: 0 1em;
+                        text-decoration: none;
+                        color: var(--bottom-text-color);
                         &:hover {
+                            color: var(--bottom-hover-color);
+                        }
+                        &:target {
                             color: var(--bottom-hover-color);
                         }
                     }

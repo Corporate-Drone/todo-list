@@ -343,9 +343,15 @@ body {
 
 .container .card .main-card .bottom .status-category .status {
   margin: 0 1em;
+  text-decoration: none;
+  color: var(--bottom-text-color);
 }
 
 .container .card .main-card .bottom .status-category .status:hover {
+  color: var(--bottom-hover-color);
+}
+
+.container .card .main-card .bottom .status-category .status:target {
   color: var(--bottom-hover-color);
 }
 

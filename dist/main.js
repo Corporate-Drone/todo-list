@@ -52,14 +52,17 @@ inputToDo.addEventListener('keyup', (e) => {
 
 activeClickable.addEventListener('click', () => {
     displayActive();
+
 })
 
 completeClickable.addEventListener('click', () => {
     displayCompleted();
+
 })
 
 allClickable.addEventListener('click', () => {
     displayAll();
+
 })
 
 clearClickable.addEventListener('click', () => {
@@ -180,6 +183,14 @@ function deleteRow(todoDiv, newToDo) {
     todoDiv.remove();
     updateCount();
 }
+
+// function colorButton {
+//     if (htmlClass.classList.contains('dark')) {
+//         console.log('DARK!');
+//     } else {
+//         console.log("nope")
+//     }
+// }
 
 function init() {
     updateCount();
