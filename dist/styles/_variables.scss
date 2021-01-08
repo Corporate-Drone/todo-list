@@ -1,0 +1,43 @@
+html.light {
+    // --background-img: url("../images/bg-desktop-light.jpg");
+    --background-button: url("../images/icon-moon.svg");
+    --background-color: hsl(0, 0%, 98%);
+    --card-color: hsl(0, 0%, 100%);
+    --border-color: hsl(233, 11%, 84%);
+    --text-color:  hsl(235, 19%, 35%);
+    --bottom-text-color: hsl(236, 9%, 61%);
+    --bottom-hover-color: hsl(235, 19%, 35%);
+}
+
+html.dark {
+    // --background-img: url("../images/bg-desktop-dark.jpg");
+    --background-button: url("../images/icon-sun.svg");
+    --background-color: hsl(235, 21%, 11%);
+    --card-color: hsl(235, 24%, 19%);
+    --border-color: hsl(233, 14%, 35%);
+    --text-color: hsl(234, 39%, 85%);
+    --bottom-text-color: hsl(233, 14%, 35%);
+    --bottom-hover-color: hsl(234, 39%, 85%);
+}
+
+//light theme colors
+$veryLightGray: hsl(0, 0%, 98%);
+$veryLightGrayishBlue: hsl(236, 33%, 92%);
+$lightGrayishBlue: hsl(233, 11%, 84%);
+$darkGrayishBlue: hsl(236, 9%, 61%);
+$veryDarkGrayishBlue: hsl(235, 19%, 35%);
+
+//dark theme colors
+$veryDarkBlue: hsl(235, 21%, 11%);
+$veryDarkDesaturated: hsl(235, 24%, 19%);
+$dark-lightGrayishBlue: hsl(234, 39%, 85%);
+$lightGrayishBlue: hsl(236, 33%, 92%); //(hover)
+$dark-darkGrayishBlue: hsl(234, 11%, 52%);
+$veryDarkGrayishBlue: hsl(233, 14%, 35%);
+$dark-veryDarkGrayishBlue: hsl(237, 14%, 26%);
+
+$black: #363839;
+$lightgray: hsl(236, 9%, 61%);
+$gray: #bdc1c6;
+$white: #fff;
+$green: #06842c;

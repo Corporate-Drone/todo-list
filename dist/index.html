@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+
+  <title>Todo app</title>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <img src="images/bg-desktop-dark.jpg" alt="" class="background">
+
+    <div class="card">
+      <div class="top">
+        <h1>TODO</h1>
+        <button class="theme-switcher clickable">
+          <!-- <img src="./images/icon-moon.svg" alt=""> -->
+        </button>
+      </div>
+      <div class="enter-card">
+        <input type="checkbox" class="todo-input" disabled>
+        <input type="text" placeholder="Create a new todo..." class="create-todo">
+        <button class="clickable"><img src="./images/icon-arrow.svg" alt="" id="arrow"></button>
+      </div>
+      <div class="main-card">
+        <!-- <div class="todo">
+          <input type="checkbox" class="todo-checkbox">
+          <label for="todo" data-content="Test" class="todo-text">Test</label>
+          <button class="close-todo">X</button>
+        </div> -->
+        <div class="bottom">
+          <div id="count">5 items left</div>
+          <div class="status-category">
+            <div class="status clickable" id="status-all">All</div>
+            <div class="status clickable" id="status-active">Active</div>
+            <div class="status clickable" id="status-complete">Completed</div>
+          </div>
+          <div class="clickable" id="clear-complete">Clear Completed</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="main.js"></script>
+</body>
+
+</html>
